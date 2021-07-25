@@ -3,10 +3,8 @@ module Expressive.Program
 open System
 open Glutinum.Express
 open Glutinum.ExpressServeStaticCore
+open Glutinum.BodyParser
 open Fable.Core.JsInterop
-
-let bodyParser =
-    importDefault<Glutinum.BodyParser.BodyParser.IExports> "body-parser"
 
 let app = express.express ()
 
